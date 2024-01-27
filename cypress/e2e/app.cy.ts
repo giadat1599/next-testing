@@ -2,7 +2,7 @@ describe("App", () => {
   it("should navigate to the todo page", () => {
     cy.visit("/");
 
-    cy.get('[data-testid="todo-link"]').click();
+    cy.getBySelector("todo-link").click();
 
     cy.url().should("include", "/todo");
   });
@@ -10,7 +10,7 @@ describe("App", () => {
   it("should navigate to the home page", () => {
     cy.visit("/todo");
 
-    cy.get('[data-testid="home-link"]').click();
+    cy.getBySelector("home-link").click();
 
     cy.url().should("include", "/");
 

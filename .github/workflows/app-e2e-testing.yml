@@ -19,4 +19,4 @@ jobs:
       - name: Install deps
         run: npm ci
       - name: Run e2e tests
-        run: npm run e2e:headless
+        run: npm run cy:run

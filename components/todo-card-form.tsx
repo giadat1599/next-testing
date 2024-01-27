@@ -30,6 +30,7 @@ export const TodoCardForm = () => {
     <Card className="w-[600px]">
       <CardHeader>
         <Input
+          data-testid="todo-input"
           placeholder="Enter a name"
           value={name}
           onChange={(e) => setName(e.target.value)}

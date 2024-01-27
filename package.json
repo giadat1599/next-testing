@@ -8,10 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "test": "jest",
-    "test:watch": "jest --watch",
-    "cy:open": "cypress open",
-    "e2e": "start-server-and-test dev http://localhost:3000 \"cypress open --e2e\"",
-    "e2e:headless": "start-server-and-test dev http://localhost:3000 \"cypress run --e2e\""
+    "test:watch": "jest --watch",    
+    "cy:open": "start-server-and-test dev http://localhost:3000 \"cypress open --e2e\"",
+    "cy:run": "start-server-and-test dev http://localhost:3000 \"cypress run --e2e\""
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.0.2",
